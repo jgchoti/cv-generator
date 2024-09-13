@@ -97,7 +97,7 @@ const Section = ({ title }) => {
                     {skill.name.toUpperCase()}
                   </h4>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-2.5 w-6/12 mt-2">
+                <div className="bg-gray-200 rounded-full h-2.5 w-6/12 mt-2">
                   <div
                     className="bg-gradient-to-r from-violet-200 to-pink-200 h-2.5 rounded-full"
                     style={{ width: `${(skill.level / 10) * 100}%` }}
