@@ -71,10 +71,12 @@ const ResumeDetails = () => {
       {sections.map((section, index) => (
         <div
           key={section.id}
-          className="w-9/12 p-6 my-2 mx-auto items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          className="lg:w-9/12 md:w-11/12 w-full p-6 my-2 mx-auto items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
           <div className="flex justify-between items-center">
-            <h2 className="text-2xl font-bold">{section.title}</h2>
+            <h2 className="text-2xl font-bold text-sky-800 font-mono">
+              {section.title}
+            </h2>
             <div>
               <button
                 onClick={() => moveSectionUp(index)}
