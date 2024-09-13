@@ -10,7 +10,11 @@ const InformationDetail = ({ formData, handleEdit }) => {
   return (
     <div className="flex flex-col items-center text-center w-full">
       {/* Name */}
-      {name && <h2 className="text-6xl font-bold mt-4 mb-4 ">{name}</h2>}
+      {name && (
+        <h2 className="font-mono text-6xl font-bold mt-4 mb-4 text-sky-800">
+          {name}
+        </h2>
+      )}
 
       {/* Description */}
       {description && (
